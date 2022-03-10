@@ -56,6 +56,8 @@ app.post("/tweetQuote", function (req, res) {
   res.redirect(tweetURL + quote);
 })
 
-app.listen(5500, function () {
-  console.log("Server started on port 5500");
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);

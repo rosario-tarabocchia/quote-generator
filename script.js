@@ -44,7 +44,6 @@ getQuotes();
 app.get("/", function(req, res){
 
   let quoteNumber = Math.floor(Math.random() * apiQuotes.length);
-
   console.log(quoteNumber);
   res.render("quote.ejs", {
       quote: apiQuotes[quoteNumber].text,
@@ -56,6 +55,18 @@ app.get("/", function(req, res){
 app.post("/", function(req, res){
   res.redirect("/");
 });
+
+app.post("/tweetQuote", function(req,res){
+  const tweetURL = "https://twitter.com/intent/tweet?text="
+  console.log(req.body.tweet);
+  let quote = req.body.tweet
+  let author = " - " + req.body.author
+  console.log("TWITTER POST");
+
+  res.redirect(tweetURL + quote);
+
+
+})
 
 app.listen(5500, function() {
   console.log("Server started on port 5500");

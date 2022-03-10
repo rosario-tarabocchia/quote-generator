@@ -9,6 +9,7 @@
   "author": "Rosario Tarabocchia",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "https": "^1.0.0"
   }

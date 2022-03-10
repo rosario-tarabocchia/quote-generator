@@ -12,10 +12,10 @@ body {
   color: black;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
-  text-align: center; 
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .quote-container {
@@ -39,14 +39,14 @@ body {
   font-size: 4rem;
 }
 
-.quote-author{
-    margin-top: 15px;
-    font-size: 2rem;
-    font-weight: 400;
-    font-style: italic;
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.button-container{
+.button-container {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
@@ -83,8 +83,8 @@ button:active {
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #333; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -92,8 +92,13 @@ button:active {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
